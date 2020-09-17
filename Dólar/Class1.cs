@@ -8,11 +8,12 @@ namespace Dólar
     class CotaçãoDolar
     {
         public static double iof = 0.06;
-        public double Reais;
+        public static double cotacao;
+        public static double dolar;
 
-        public double TotalEmReais(double total)
+        public static double TotalEmReais()
         {
-            return (total * iof) + total;
+            return ((cotacao * dolar) * iof) + (cotacao * dolar);
         }
     }
 }
